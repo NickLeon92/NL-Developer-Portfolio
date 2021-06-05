@@ -107,3 +107,21 @@ h2 {
     background-color: teal;
     transform: scale(1.1);
 }
+
+.aboutsection{
+    text-align: right;
+    width: fit-content;
+    border: solid;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.aboutsection img {
+    height: 450px;
+}
+
+.aboutsection div {
+    padding-left: 10px;
+}
