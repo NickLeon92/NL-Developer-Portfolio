@@ -106,16 +106,18 @@ h2 {
 .worksection section:hover {
     background-color: teal;
     transform: scale(1.1);
+    
 }
 
 .aboutsection{
-    text-align: right;
+    text-align: center;
     width: fit-content;
     border: solid;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    background-color: teal;
 }
 
 .aboutsection img {
@@ -123,5 +125,15 @@ h2 {
 }
 
 .aboutsection div {
-    padding-left: 10px;
+    padding-left: 50px;
+    padding-right: 20px;
 }
+
+.aboutsection p {
+    transition: all .1s ease-in-out;
+    color: white;
+}
+.aboutsection p:hover {
+    transform: scale(1.1);
+}
+
