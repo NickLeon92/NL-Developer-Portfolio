@@ -150,11 +150,14 @@ nav a {
     height: 450px;
     border-radius: 15px;
     border: solid;
+    margin: auto;
+    max
 }
 
 .aboutsection div {
     padding-left: 50px;
     padding-right: 20px;
+    margin: auto;
 }
 
 .aboutsection p {
