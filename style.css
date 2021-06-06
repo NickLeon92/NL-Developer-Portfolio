@@ -63,6 +63,9 @@ h2 {
     color: white;
     padding: 20px;
     font-size: 24px;
+    border-left: solid;
+    border-right: solid;
+    transition: all .2s ease-in-out;
 }
 
 #Work {
@@ -83,6 +86,7 @@ h2 {
 .worksection section{
     padding: 20px;
     border: solid;
+    border-radius: 15px;
     margin: 20px;
     flex: 0 0 400px;
     transition: all .2s ease-in-out;
@@ -91,6 +95,8 @@ h2 {
 .worksection img {
     width: 100%;
     object-fit: cover;
+    border: solid;
+    border-radius: 15px;
 }
 
 .worksection ul {
@@ -118,10 +124,13 @@ h2 {
     flex-wrap: wrap;
     margin: auto;
     background-color: teal;
+    border-radius: 15px;
 }
 
 .aboutsection img {
     height: 450px;
+    border-radius: 15px;
+    border: solid;
 }
 
 .aboutsection div {
@@ -137,3 +146,12 @@ h2 {
     transform: scale(1.1);
 }
 
+.nav a:hover {
+    background-color: rgb(0, 68, 68);
+    transform: scale(1.1);
+}
+
+.conactsection {
+    border: solid;
+    border-radius: 25px;
+}
