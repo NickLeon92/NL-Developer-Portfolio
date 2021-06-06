@@ -85,6 +85,12 @@ nav a {
     border-right: solid;
     transition: all .2s ease-in-out;
 } */
+.big {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 #Work {
     margin-top: 5%;
@@ -104,17 +110,15 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 50px;
 }
 
 #portfolio {
     padding: 20px;
     border: solid;
     border-radius: 15px;
-    margin-left: 8%;
-    margin-right: 8%;
-    flex: 0 0 800px;
+    flex: .5 0 400px;
     transition: all .2s ease-in-out;
-    margin-bottom: 5%;
 }
 
 .worksection section{
