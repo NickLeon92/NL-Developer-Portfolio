@@ -177,7 +177,6 @@ section:hover {
     border-radius: 15px;
     border: solid;
     margin: auto;
-    max
 }
 
 .aboutsection div {
@@ -202,10 +201,30 @@ nav a:hover {
 .conactsection {
     border: solid;
     border-radius: 25px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width: 992px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     nav {
       flex-direction: column;
+    }
+
+    .conactsection {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .aboutsection {
+        margin-right: 20px;
+        margin-left: 20px;
+        flex: .5 0 400px;
+    }
+
+    .aboutsection img {
+        object-fit: cover;
+        width: 100%;
+
     }
