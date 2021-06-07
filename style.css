@@ -225,6 +225,6 @@ nav a:hover {
 
     .aboutsection img {
         object-fit: cover;
-        width: 100%;
-
+        flex: .2 0 350px;
+        width:100%;
     }
