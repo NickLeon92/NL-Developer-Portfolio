@@ -7,6 +7,7 @@ body {
     text-align: center;
 }
 
+/* This section formats the header text and images */
 #header {
     height: 600px;
     
@@ -22,10 +23,6 @@ h1 {
     margin-left: auto;
 }
 
-h2 {
-    display: block;
-}
-
 #profile-pic {
     display: block;
     height: 300px;
@@ -38,7 +35,7 @@ h2 {
     background-color: black;
 }
 
-
+/* This section formats and animates the nav bar */
 nav {
     display: flex;
     background-color: teal;
@@ -53,12 +50,22 @@ nav a {
     transition: all .2s ease-in-out;
 }
 
+nav a:hover {
+    background-color: rgb(0, 68, 68);
+    transform: scale(.9);
+}
+
+/* This section formats and animates the Work Section */
+h2 {
+    display: block;
+}
+
 #Work {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.big {
+.worksection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -80,17 +87,14 @@ nav a {
     max-height: 600px;
 }
 
-.worksection {
-
-    width: 100%;
+.bottomsection {
     flex-wrap: wrap;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 50px;
 }
 
-.worksection section{
+.bottomsection section{
     padding: 20px; 
     border: solid;
     border-radius: 15px;
@@ -99,7 +103,7 @@ nav a {
     transition: all .2s ease-in-out;
 }
 
-.worksection img {
+.bottomsection img {
     width: 100%;
     object-fit: cover;
     border: solid black;
@@ -122,6 +126,7 @@ section:hover {
     
 }
 
+/* This section fomats and animates the About Me section */
 #About-Me {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -132,7 +137,7 @@ section:hover {
     border: solid;
     padding: 25px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     margin: auto;
     background-color: teal;
     border-radius: 15px;
@@ -159,11 +164,7 @@ section:hover {
     transform: scale(1.1);
 }
 
-nav a:hover {
-    background-color: rgb(0, 68, 68);
-    transform: scale(.9);
-}
-
+/* This section formats the Contact Me section */
 .conactsection {
     border: solid;
     border-radius: 25px;
@@ -172,8 +173,8 @@ nav a:hover {
     margin-bottom: 100px;
 }
 
+/* This section formats the page for smaller screens */
 @media screen and (max-width: 992px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
     nav {
       flex-direction: column;
     }
