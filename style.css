@@ -5,108 +5,161 @@
 
 body {
     text-align: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
 }
 
 /* This section formats the header text and images */
 #header {
-    height: 600px;
+    height: 100vh;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    /* background-size: 400% 400%; */
+    /* animation: gradient 5s ease infinite; */
+
+}
+
+#header-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    /* 25% {
+        background-position: 90% 50%;
+    } */
+    50% {
+        background-position: 100% 50%;
+    }
+    /* 75% {
+        background-position: 90% 50%;
+    } */
+    100% {
+        background-position: 0% 50%;
+    }
     
 }
 
 h1 {
     color: white;
     font-size: 50px;
-    background-color: teal;
     padding: 10px;
     display: inline-block;
     margin-right: auto;
     margin-left: auto;
+    transition: all .2s ease-in-out;
+    box-shadow: 10px 5px 20px black;
+
 }
 
 #profile-pic {
     display: block;
-    height: 300px;
+    height: 45vh;
     margin-top: 20px;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    border: solid teal;
-    padding: 10px;
-    background-color: black;
+    border: solid white;
+    /* background-color: black; */
+    transition: all .2s ease-in-out;
+    box-shadow: 10px 5px 20px black;
+
 }
 
 /* This section formats and animates the nav bar */
+
+
 nav {
+    margin-top: 15px;
+    align-content: center;
     display: flex;
-    background-color: teal;
     justify-content: center;
+    width: 100%;
+}
+
+#nav-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
 }
  
 nav a {
     color: white;
     padding: 21px 55px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 12px;
     transition: all .2s ease-in-out;
 }
 
 nav a:hover {
-    background-color: rgb(0, 68, 68);
+ 
     transform: scale(.9);
 }
 
 /* This section formats and animates the Work Section */
 
-#Work {
-    margin-top: 5%;
-    margin-bottom: 5%;
+#sidebar {
+    border-left: solid white;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    
 }
 
+#Work{
+    margin-right: 15px;
+}
 .worksection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 10px;
+    
 }
 
-#portfolio {
-    padding: 20px;
-    border: solid;
-    border-radius: 15px;
-    flex: .5 0 400px;
+#first-demo {
     transition: all .2s ease-in-out;
+    box-shadow: 10px 5px 20px black;
 }
 
-#first {
-    width: 100%;
+#first-demo-pic {
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    border: solid black;
-    border-radius: 15px;
-    max-height: 600px;
+    border: solid wheat;
+    
 }
 
 .bottomsection {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    padding: 50px;
+    box-shadow: 10px 5px 20px black;
+
 }
 
 .bottomsection section{
-    padding: 20px; 
-    border: solid;
-    border-radius: 15px;
-    margin: 20px;
-    flex: 0 0 400px;
     transition: all .2s ease-in-out;
 }
 
 .bottomsection img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    border: solid black;
-    border-radius: 15px;
+    border: solid wheat;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -117,11 +170,11 @@ li {
     margin-top: 10px;
 }
 
-section:hover {
+/* section:hover {
     background-color: teal;
     transform: scale(1.1);
     
-}
+} */
 
 /* This section fomats and animates the About Me section */
 #About-Me {
@@ -172,7 +225,15 @@ section:hover {
 
 /* This section formats the page for smaller screens */
 @media screen and (max-width: 992px) {
-    nav {
+    #sidebar{
+        border-left: none;
+        border-top: solid white;
+    }
+
+    .worksection{
+        flex-direction: column;
+    }
+    /* nav {
       flex-direction: column;
     }
 
@@ -190,6 +251,5 @@ section:hover {
     .aboutsection img {
         object-fit: cover;
         flex: .2 0 350px;
-        width:100%;
-}
+        width:100%; */
 }
