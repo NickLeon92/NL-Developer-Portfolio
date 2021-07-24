@@ -180,27 +180,31 @@ li {
 #About-Me {
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-right: 15px;
 }
 
 .aboutsection{
+    height: 100vh;
     width: fit-content;
-    border: solid;
     padding: 25px;
+    display: flex; 
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+#aboutMeContent{
     display: flex;
-    flex-wrap: wrap;  
-    margin: auto;
-    background-color: teal;
-    border-radius: 15px;
+    height: 600px;
+    border-left: solid white;
 }
-
 .aboutsection img {
-    height: 450px;
-    border-radius: 15px;
-    border: solid;
+    height: 250px;
+    border: solid wheat;
     margin: auto;
 }
 
-.aboutsection div {
+#questions {
     padding-left: 50px;
     padding-right: 20px;
     margin: auto;
@@ -232,6 +236,7 @@ li {
 
     .worksection{
         flex-direction: column;
+        flex-wrap: nowrap;
     }
     /* nav {
       flex-direction: column;
