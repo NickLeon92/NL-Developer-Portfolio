@@ -172,11 +172,14 @@ li {
     margin-right: 10px;
 }
 
-/* section:hover {
-    background-color: teal;
-    transform: scale(1.1);
+img:hover {
+    border: solid teal;
     
-} */
+}
+
+#first-demo-pic:hover{
+    border: solid teal;
+}
 
 /* This section fomats and animates the About Me section */
 #About-Me {
@@ -238,7 +241,7 @@ li {
 #contactContent{
     border-left: solid white;
     padding-left: 15px;
-    
+
 }
 
 .social{
