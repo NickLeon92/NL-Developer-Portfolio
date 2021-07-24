@@ -121,7 +121,7 @@ nav a:hover {
 }
 .worksection {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -168,6 +168,8 @@ ul {
 
 li {
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* section:hover {
@@ -218,13 +220,34 @@ li {
     transform: scale(1.1);
 }
 
+#Contact {
+    margin-right: 15px;
+}
+
 /* This section formats the Contact Me section */
 .conactsection {
-    border: solid;
-    border-radius: 25px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 25%;
     margin-left: 25%;
     margin-bottom: 100px;
+}
+
+#contactContent{
+    border-left: solid white;
+    padding-left: 15px;
+    
+}
+
+.social{
+    width: 50px;
+}
+
+#socialList{
+    display: flex;
+    justify-content: center;
 }
 
 /* This section formats the page for smaller screens */
