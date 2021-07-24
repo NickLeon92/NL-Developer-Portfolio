@@ -264,6 +264,29 @@ img:hover {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
+    .bottomsection img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: solid wheat;
+    }
+
+    #first-demo-pic {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border: solid wheat;
+        
+    }
+
+    nav {
+        margin-top: 0px;
+    }
+    nav a{
+        padding: 15px 40px;
+
+    }
     /* nav {
       flex-direction: column;
     }
