@@ -3,6 +3,8 @@ const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
 
 const numBalls = 50;
 const balls = [];
+let p1 = document.getElementById("animation")
+let p2 = document.getElementById("animation2")
 
 for (let i = 0; i < numBalls; i++) {
   let ball = document.createElement("div");
@@ -15,7 +17,8 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.height = ball.style.width;
   
   balls.push(ball);
-  document.body.append(ball);
+  p1.appendChild(ball);
+//   p2.appendChild(ball);
 }
 
 // Keyframes
