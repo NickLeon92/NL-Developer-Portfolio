@@ -138,7 +138,7 @@ nav a:hover {
     width: 400px;
     height: 400px;
     object-fit: cover;
-    border: solid wheat;
+
     
 }
 
@@ -158,7 +158,7 @@ nav a:hover {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: solid wheat;
+    /* border: solid wheat; */
 }
 ul {
     list-style-type: none;
@@ -172,14 +172,14 @@ li {
     margin-right: 10px;
 }
 
-img:hover {
+.pictureContainer img:hover{
     border: solid teal;
     
 }
 
-#first-demo-pic:hover{
+/* #first-demo-pic:hover{
     border: solid teal;
-}
+} */
 
 /* This section fomats and animates the About Me section */
 #About-Me {
@@ -253,6 +253,35 @@ img:hover {
     justify-content: center;
 }
 
+.pictureContainer {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .pictureContainer:hover .overlay {
+    opacity: 1;
+  }
 /* This section formats the page for smaller screens */
 @media screen and (max-width: 992px) {
     #sidebar{
