@@ -200,7 +200,7 @@ img:hover {
 }
 #aboutMeContent{
     display: flex;
-    height: 600px;
+
     border-left: solid white;
 }
 .aboutsection img {
@@ -287,6 +287,12 @@ img:hover {
         padding: 15px 40px;
 
     }
+    #questions h3{
+        font-size: 20px;
+    }
+    #questions p{
+        font-size: 10px;
+    }
     /* nav {
       flex-direction: column;
     }
@@ -307,3 +313,4 @@ img:hover {
         flex: .2 0 350px;
         width:100%; */
 }
+
