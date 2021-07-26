@@ -264,31 +264,44 @@ li {
     width: 100%;
     height: auto;
 }
-
+#repo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+    background: rgba(100, 161, 180, 0.7); /* Black see-through */
+    border: none;
+    transition: all .2s ease-in-out;
+    
+}
+#repo:hover {
+    
+    transform: scale(.9);
+}
 .overlay {
     position: absolute; 
     bottom: 0; 
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(100, 161, 180, 0.7); /* Black see-through */
     color: #f1f1f1; 
     width: 100%;
     transition: .5s ease;
     opacity:0;
     color: white;
     font-size: 12px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 .pictureContainer:hover .overlay {
     opacity: 1;
 }
+/* This section formats the page for smaller screens */
 .ball {
     position: absolute;
     border-radius: 100%;
     opacity: 0.7;
   }
-/* This section formats the page for smaller screens */
 @media screen and (max-width: 992px) {
     #sidebar{
         border-left: none;
@@ -327,6 +340,10 @@ li {
     }
     #questions p{
         font-size: 10px;
+    }
+
+    .overlay{
+        font-size: 7px;
     }
     /* nav {
       flex-direction: column;

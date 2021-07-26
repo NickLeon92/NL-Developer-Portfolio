@@ -18,7 +18,6 @@ for (let i = 0; i < numBalls; i++) {
   
   balls.push(ball);
   p1.appendChild(ball);
-//   p2.appendChild(ball);
 }
 
 // Keyframes
@@ -42,3 +41,4 @@ balls.forEach((el, i, ra) => {
     }
   );
 });
+
