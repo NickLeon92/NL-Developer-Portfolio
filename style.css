@@ -109,6 +109,7 @@ nav a:hover {
 /* This section formats and animates the Work Section */
 
 #sidebar {
+    display: flex;
     border-left: solid white;
     padding-left: 15px;
     padding-top: 15px;
@@ -136,8 +137,8 @@ nav a:hover {
 }
 
 #first-demo-pic {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     object-fit: cover;
     
     
@@ -146,6 +147,7 @@ nav a:hover {
 .bottomsection {
     flex-wrap: wrap;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     box-shadow: 10px 5px 20px black;
     
@@ -156,8 +158,8 @@ nav a:hover {
 }
 
 .bottomsection img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     /* border: solid wheat; */
 }
@@ -278,6 +280,7 @@ li {
     
     transform: scale(.9);
 }
+
 .overlay {
     position: absolute; 
     bottom: 0; 
@@ -304,8 +307,12 @@ li {
   }
 @media screen and (max-width: 992px) {
     #sidebar{
+        flex-direction: column;
         border-left: none;
         border-top: solid white;
+    }
+    .bottomsection{
+        flex-direction: row;
     }
     
     .worksection{
